@@ -1,0 +1,56 @@
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  overflow: auto; /* Enable scroll if modal content is too tall */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: rgb(87, 87, 87);
+  margin: 0 auto; /* Centered content */
+  padding: 20px;
+  border: 1px solid #716e6e;
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 10px;
+  text-align: justify;
+
+}
+
+/* Style the modal text */
+.modal-content p {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #ffffff; /* light text */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(195, 11, 11);
+  cursor: pointer;
+}
+
+.modal-content {
+  max-width: 80%; /* Ensures the modal width is not more than 80% of the viewport */
+  margin: 0 auto; /* Centers the modal */
+  padding: 20px; /* Adds space inside the modal */
+  overflow-wrap: break-word; /* Ensures long words break and don't overflow */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  background-color: #333; /* Optional: Ensure background contrasts with text */
+}
+  

@@ -1,37 +1,23 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Get all view project buttons
-    const viewProjectBtns = document.querySelectorAll('.view-project-btn');
-    const modals = document.querySelectorAll('.modal');
-    const closeBtns = document.querySelectorAll('.close');
-
-    // Open modal
-    viewProjectBtns.forEach(function (btn) {
-        btn.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent link default behavior
-            const projectId = btn.getAttribute('data-project'); // Get project ID
-            const modal = document.getElementById(projectId); // Find modal with the same ID
-            if (modal) {
-                modal.style.display = 'block'; // Show the modal
-            }
-        });
+// Example script for opening the modal
+document.querySelectorAll('.view-project-btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+        var project = this.getAttribute('data-project');
+        document.getElementById(project).style.display = 'block';
     });
+});
 
-    // Close modal when clicking the close button
-    closeBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-            const modal = btn.closest('.modal');
-            if (modal) {
-                modal.style.display = 'none'; // Hide the modal
-            }
-        });
+// Script for closing the modal
+document.querySelectorAll('.close').forEach(function(span) {
+    span.addEventListener('click', function() {
+        this.parentElement.parentElement.style.display = 'none';
     });
+});
 
-    // Close modal when clicking outside the modal content
-    window.addEventListener('click', function (e) {
-        modals.forEach(function (modal) {
-            if (e.target === modal) {
-                modal.style.display = 'none'; // Close modal if clicked outside of content
-            }
-        });
+// Close the modal if the user clicks outside of it
+window.addEventListener('click', function(event) {
+    document.querySelectorAll('.modal').forEach(function(modal) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
     });
 });

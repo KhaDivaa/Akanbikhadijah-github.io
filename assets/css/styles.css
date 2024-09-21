@@ -3,12 +3,14 @@
   display: none; /* Hidden by default */
   position: fixed;
   z-index: 1;
+  margin: 0 auto;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
   overflow: auto; /* Enable scroll if modal content is too tall */
+  
 }
 
 /* Modal Content */
@@ -17,11 +19,22 @@
   margin: 0 auto; /* Centered content */
   padding: 20px;
   border: 1px solid #716e6e;
-  width: 80%;
-  max-width: 1000px;
+  overflow-wrap: break-word; /* Ensures long words break and don't overflow */
+  box-sizing: border-box; /* Ensures padding is included in the width calculation */
+  width: 100%;
+  max-width: 750px;
   border-radius: 10px;
-  text-align: justify;
+  text-align: left;
 
+}
+/* Style for modal heading */
+.modal-content h2.major {
+  display: inline-block;  /* Ensures the heading only takes up the space it needs */
+  border-bottom: 2px solid #fff;  /* Adds a custom underline */
+  padding-bottom: 5px;  /* Adjust the padding as needed */
+  width: auto;  /* Ensures the width of the heading is only as wide as the text */
+  margin: 0 auto; /* Centers the heading */
+  text-align: left; /* Optional: Center-aligns text within the modal */
 }
 
 /* Style the modal text */
@@ -30,6 +43,7 @@
   font-size: 18px;
   color: #ffffff; /* light text */
 }
+
 
 /* The Close Button */
 .close {
@@ -45,12 +59,10 @@
   cursor: pointer;
 }
 
-.modal-content {
-  max-width: 80%; /* Ensures the modal width is not more than 80% of the viewport */
-  margin: 0 auto; /* Centers the modal */
-  padding: 20px; /* Adds space inside the modal */
-  overflow-wrap: break-word; /* Ensures long words break and don't overflow */
-  box-sizing: border-box; /* Ensures padding is included in the width calculation */
-  background-color: #333; /* Optional: Ensure background contrasts with text */
+
+@media only screen and (max-width: 600px) {
+  .modal {
+      width: 75%; /* Take most of the screen on small devices */
+      max-width: none;
+  }
 }
-  

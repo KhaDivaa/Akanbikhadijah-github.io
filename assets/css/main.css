@@ -112,7 +112,7 @@ input, select, textarea {
 /* Type */
 
 	html {
-		font-size: 20pt;
+		font-size: 18pt;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -147,7 +147,7 @@ input, select, textarea {
 		}
 		#landing-name {
 			font-family: "amiri", serif;
-			font-size: 3.0rem; 
+			font-size: 2.5rem; 
 			text-transform: uppercase;
 			color: #ffffff; 
 		}
@@ -464,15 +464,7 @@ nav a:hover {
 			box-shadow: 0 0 0 1px #ffffff;
 		}
 
-	select {
-		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23ffffff' /%3E%3C/svg%3E");
-		background-size: 1.25rem;
-		background-repeat: no-repeat;
-		background-position: calc(100% - 1rem) center;
-		height: 2.75rem;
-		padding-right: 2.75rem;
-		text-overflow: ellipsis;
-	}
+	
 
 		select option {
 			color: #ffffff;
@@ -1169,10 +1161,10 @@ nav a:hover {
 			-webkit-transition: background-color 2.5s ease-in-out;
 			-ms-transition: background-color 2.5s ease-in-out;
 			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition-delay: 0.3s;
+			-webkit-transition-delay: 0.3s;
+			-ms-transition-delay: 0.3s;
+			transition-delay: 0.3s;
 			
 			background-size: auto,
  256px 256px;
@@ -1188,11 +1180,11 @@ nav a:hover {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/Backg.jpg");
+			-moz-transition: -moz-transform 0.2s ease-in-out, -moz-filter 0.325s ease-in-out;
+			-webkit-transition: -webkit-transform 0.2s ease-in-out, -webkit-filter 0.325s ease-in-out;
+			-ms-transition: -ms-transform 0.2s ease-in-out, -ms-filter 0.325s ease-in-out;
+			transition: transform 0.2s ease-in-out, filter 0.325s ease-in-out;
+			background-image: url("../../images/Backg1.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1397,7 +1389,7 @@ nav a:hover {
 					line-height: 2.75rem;
 					padding: 0 1.25rem 0 1.45rem;
 					text-transform: uppercase;
-					letter-spacing: 0.2rem;
+					letter-spacing: 0.1rem;
 					font-size: 0.8rem;
 					border-bottom: 0;
 				}

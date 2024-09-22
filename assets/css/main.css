@@ -985,7 +985,7 @@ nav a:hover {
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
-			text-align: left;
+			text-align: justify;
 		}
 
 		table thead {
@@ -1051,7 +1051,7 @@ nav a:hover {
 		line-height: 2.75rem;
 		outline: 0;
 		padding: 0 1.25rem 0 1.35rem;
-		text-align: center;
+		text-align: justify;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;

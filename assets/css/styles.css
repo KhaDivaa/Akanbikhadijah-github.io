@@ -12,6 +12,21 @@
   overflow: auto; /* Enable scroll if modal content is too tall */
   
 }
+/* The Close Button */
+.close {
+  color: #ef5454;
+  position: absolute;
+  top: 10px;      /* Adjust this value as needed */
+  right: 20px;    /* Adjust this value as needed */
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 2;     /* Ensure it's on top */
+}
+.close:hover,
+.close:focus {
+  color: rgb(195, 11, 11);
+  cursor: pointer;
+}
 
 /* Modal Content */
 .modal-content {
@@ -48,18 +63,3 @@
 }
 
 
-/* The Close Button */
-.close {
-  color: #ef5454;
-  position: absolute;
-  top: 10px;      /* Adjust this value as needed */
-  right: 20px;    /* Adjust this value as needed */
-  font-size: 28px;
-  font-weight: bold;
-  z-index: 2;     /* Ensure it's on top */
-}
-.close:hover,
-.close:focus {
-  color: rgb(195, 11, 11);
-  cursor: pointer;
-}

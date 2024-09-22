@@ -22,7 +22,7 @@
   overflow-wrap: break-word; /* Ensures long words break and don't overflow */
   box-sizing: border-box; /* Ensures padding is included in the width calculation */
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   border-radius: 10px;
   text-align: justify;
 
@@ -43,7 +43,7 @@
 /* Fix for mobile devices */
 @media only screen and (max-width: 600px) {
   .modal-content h2 {
-    font-size: 20px; /* Adjust heading size for mobile */
+    font-size: 1rem; /* Adjust heading size for mobile */
     border-bottom-width: 1px; /* Make the underline thinner */
   }
 }
@@ -68,7 +68,7 @@
 /* Media query for mobile (screens under 600px) */
 @media only screen and (max-width: 600px) {
   .close {
-    font-size: 22px; /* Adjust font size for smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
     top: 15px; /* Adjust the position for mobile */
     right: 15px; /* Ensure it is clickable */
   }

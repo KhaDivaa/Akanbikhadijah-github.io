@@ -36,28 +36,40 @@
   text-align: left;              /* Center the text */
   margin-bottom: 20px;             /* Add spacing below the heading */
   text-transform: uppercase;       /* Ensure uppercase letters for consistency */
-  letter-spacing: 0.1rem;          /* Ensure consistent letter spacing */
+  letter-spacing: 0.1rem; 
+  display: inline-block; /* Make it only as wide as the text */
+  padding-bottom: 10px;         /* Ensure consistent letter spacing */
+}
+/* Fix for mobile devices */
+@media only screen and (max-width: 600px) {
+  .modal-content h2 {
+    font-size: 20px; /* Adjust heading size for mobile */
+    border-bottom-width: 1px; /* Make the underline thinner */
+  }
 }
 
-
-/* Style the modal text */
-.modal-content p {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #ffffff; /* light text */
-}
-
-
-/* The Close Button */
+/* General close button styling */
 .close {
-  color: #ef5454;
-  float: right;
+  color: #aaa;
   font-size: 28px;
   font-weight: bold;
+  position: absolute;
+  top: 10px; /* Move it closer to the top */
+  right: 20px; /* Keep it away from the edge */
+  cursor: pointer;
 }
 
+/* Ensure visibility on hover/focus */
 .close:hover,
 .close:focus {
-  color: rgb(195, 11, 11);
-  cursor: pointer;
+  color: #f00; /* Red color for better visibility */
+}
+
+/* Media query for mobile (screens under 600px) */
+@media only screen and (max-width: 600px) {
+  .close {
+    font-size: 22px; /* Adjust font size for smaller screens */
+    top: 15px; /* Adjust the position for mobile */
+    right: 15px; /* Ensure it is clickable */
+  }
 }

@@ -1,23 +1,32 @@
-// Example script for opening the modal
-document.querySelectorAll('.view-project-btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-        var project = this.getAttribute('data-project');
-        document.getElementById(project).style.display = 'block';
-    });
-});
+// JavaScript to control modals without affecting navigation
+document.addEventListener('DOMContentLoaded', function () {
+    // Get all project buttons
+    const viewProjectBtns = document.querySelectorAll('.view-project-btn');
+    const modals = document.querySelectorAll('.modal');
+    const closeBtns = document.querySelectorAll('.close');
 
-// Script for closing the modal
-document.querySelectorAll('.close').forEach(function(span) {
-    span.addEventListener('click', function() {
-        this.parentElement.parentElement.style.display = 'none';
+    // Function to open the correct modal
+    viewProjectBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            const projectId = btn.getAttribute('data-project');
+            const modal = document.getElementById(projectId);
+            modal.style.display = 'block';  // Show the modal
+        });
     });
-});
 
-// Close the modal if the user clicks outside of it
-window.addEventListener('click', function(event) {
-    document.querySelectorAll('.modal').forEach(function(modal) {
-        if (event.target == modal) {
-            modal.style.display = 'none';
-        }
+    // Function to close the modal
+    closeBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+            this.closest('.modal').style.display = 'none';  // Hide the modal
+        });
+    });
+
+    // Close modal when clicking outside of modal content
+    window.addEventListener('click', function (event) {
+        modals.forEach(modal => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        });
     });
 });

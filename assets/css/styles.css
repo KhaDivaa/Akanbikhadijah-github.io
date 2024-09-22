@@ -22,20 +22,23 @@
   overflow-wrap: break-word; /* Ensures long words break and don't overflow */
   box-sizing: border-box; /* Ensures padding is included in the width calculation */
   width: 100%;
-  max-width: 750px;
+  max-width: 800px;
   border-radius: 10px;
-  text-align: left;
+  text-align: justify;
 
 }
-/* Style for modal heading */
-.modal-content h2.major {
-  display: inline-block;  /* Ensures the heading only takes up the space it needs */
-  border-bottom: 2px solid #fff;  /* Adds a custom underline */
-  padding-bottom: 5px;  /* Adjust the padding as needed */
-  width: auto;  /* Ensures the width of the heading is only as wide as the text */
-  margin: 0 auto; /* Centers the heading */
-  text-align: left; /* Optional: Center-aligns text within the modal */
+/* Consistent Heading Styles for Modals */
+.modal-content h2 {
+  font-family: "Garamond", serif;  /* Ensure both headings use the same font */
+  font-size: 1rem;                 /* Ensure both headings have the same size */
+  font-weight: 300;                /* Set the font weight to be consistent */
+  color: #ffffff;                  /* Set the color to white */
+  text-align: left;              /* Center the text */
+  margin-bottom: 20px;             /* Add spacing below the heading */
+  text-transform: uppercase;       /* Ensure uppercase letters for consistency */
+  letter-spacing: 0.1rem;          /* Ensure consistent letter spacing */
 }
+
 
 /* Style the modal text */
 .modal-content p {
@@ -47,7 +50,7 @@
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: #ef5454;
   float: right;
   font-size: 28px;
   font-weight: bold;
